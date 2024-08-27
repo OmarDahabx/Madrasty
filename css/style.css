@@ -1,10 +1,10 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: cursive;
+    font-family: 'Josefin Sans', sans-serif;
 }
 body{
-    font-family: cursive;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 nav{
@@ -17,12 +17,33 @@ nav img{
 .nav-link{
     font-size: 25px;
     letter-spacing: 3px;
-    color: white;
+    color: white !important;
 }
-@media only screen and (max-width:768)
+
+.navbar-dark .navbar-toggler {
+    color: black !important;;
+    border-color: rgba(255, 255, 255, .1);
+}
+@media only screen and (min-width: 480px) and (max-width: 768px)
 {
     nav{
         width:100%
+    }
+    .nav-link{
+        color: #4e4848 !important;
+    }
+    .navbar-dark .navbar-toggler {
+        color: black !important;;
+        border-color: rgba(255, 255, 255, .1);
+    }
+}
+@media only screen and (max-width:480px) {
+    .nav-link{
+        color: #4e4848 !important;
+    }
+    .navbar-dark .navbar-toggler {
+        color: black !important;
+        border-color: rgba(255, 255, 255, .1);
     }
 }
 /*--------------------- end of navBar ------------------*/
@@ -251,9 +272,10 @@ nav img{
 @media only screen and (max-width:992px)
 {
     .footer{
-        height: 455px;
+        /* height: 455px; */
+        height: auto;
         width: 100%;
-        padding: 40px;
+        /* padding: 40px; */
     }
     .footer .sata{
         width: 100%;
